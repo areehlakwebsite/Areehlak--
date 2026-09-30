@@ -1,0 +1,18 @@
+export const ENV = {
+  databaseUrl: process.env.DATABASE_URL ?? "",
+  cookieSecret: process.env.JWT_SECRET ?? "",
+  supabaseUrl: process.env.SUPABASE_URL ?? "",
+  supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
+  supabaseProductsBucket: process.env.SUPABASE_STORAGE_BUCKET_PRODUCTS ?? "book-images",
+  supabasePaymentProofsBucket: process.env.SUPABASE_STORAGE_BUCKET_PAYMENT_PROOFS ?? "payment-proofs",
+  adminPhone: process.env.ADMIN_PHONE ?? "01037468010",
+  adminPassword: process.env.ADMIN_PASSWORD ?? "01037468010",
+  adminSecurityPin: process.env.ADMIN_SECURITY_PIN ?? "0103",
+  paymobApiKey: process.env.PAYMOB_API_KEY ?? "",
+  paymobIntegrationId: process.env.PAYMOB_INTEGRATION_ID ?? "",
+  paymobIframeId: process.env.PAYMOB_IFRAME_ID ?? "",
+  paymobHmacSecret: process.env.PAYMOB_HMAC_SECRET ?? "",
+  whatsappAccessToken: process.env.WHATSAPP_ACCESS_TOKEN ?? "",
+  whatsappPhoneNumberId: process.env.WHATSAPP_PHONE_NUMBER_ID ?? "",
+  isProduction: process.env.NODE_ENV === "production",
+};
